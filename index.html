@@ -1,71 +1,16 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vitrum RP - Loading...</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
-</head>
-<body>
-    <div id="background-container">
-        <div class="overlay"></div>
-        <div class="particle-container">
-            <div class="particle"></div>
-            <div class="particle"></div>
-            <div class="particle"></div>
-            <div class="particle"></div>
-            <div class="particle"></div>
-            <div class="particle"></div>
-            <div class="particle"></div>
-            <div class="particle"></div>
-            <div class="particle"></div>
-            <div class="particle"></div>
-        </div>
-    </div>
 
-    <div class="top-bar">
-        <div class="clock" id="real-time">00:00:00</div>
-    </div>
+  <!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Loading screen for GMod</title>
+      <style>html, body { height: 100%; margin: 0; } #root { height: 100%; }</style>
+    </head>
 
-    <main class="loading-screen">
-        <div class="center-content">
-            <div class="logo-container">
-                <img src="logo.png" alt="Vitrum Logo" id="logo">
-                <div class="logo-glow"></div>
-            </div>
-            <h1 id="server-name">VITRUM ROLEPLAY</h1>
-            <p id="loading-status">Initialisation de la connexion...</p>
-        </div>
-
-        <div class="bottom-ui">
-            <div class="progress-section">
-                <div class="progress-info">
-                    <span id="percentage">0%</span>
-                    <span id="current-file">Chargement des ressources...</span>
-                </div>
-                <div class="progress-bar-container">
-                    <div id="progress-bar" style="width: 0%;"></div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Music Control UI -->
-        <div class="music-control" id="music-btn" onclick="toggleMusic()">
-            <div class="music-waves" id="waves">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            <span id="music-text">PLAYING</span>
-        </div>
-    </main>
-
-    <!-- Local Audio Player -->
-    <audio id="bg-music" loop>
-        <source src="music.mp3" type="audio/mpeg">
-    </audio>
-
-    <script src="script.js"></script>
-</body>
-</html>
+    <body>
+      <div id="root"></div>
+      <script type="module" src="/src/main.tsx"></script>
+    </body>
+  </html>
+  
